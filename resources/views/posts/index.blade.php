@@ -1,9 +1,9 @@
 <x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight flex items-center justify-between">
+    <x-slot name="header" >
+        <h2 class="font-semibold text-xl text-white dark:text-gray-200 leading-tight flex items-center justify-between">
             {{ __('Posts') }}
 
-            <a href="{{ route('posts.create') }}" class=" text-xs bg-gray-800 text-white rounded px-2 py-1"> Crear </a>
+            <a href="{{ route('posts.create') }}" class=" text-xs bg-sky-500 text-gray-200 rounded px-4 py-1"> Crear </a>
 
         </h2>
     </x-slot>
@@ -27,7 +27,7 @@
                                         <input
                                             type="submit"
                                             value="Eliminar"
-                                            class="bg-gray-800 text-white rounded px-4 py-2"
+                                            class="bg-sky-800 text-white rounded px-4 py-2"
                                             onclick="return confirm('Esta seguro de eliminar {{ $post->title }} ')"
                                         ></input>
                                     </form>

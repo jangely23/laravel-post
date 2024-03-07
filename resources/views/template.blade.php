@@ -14,11 +14,11 @@
         <header class="flex justify-between items-denter py-4">
             <div class="flex items-center flex-grow gap-4">
                 <a href="{{ route('home') }}">
-                    <img src="{{ asset('images/dev.png') }}" alt="Logo" class="h-12">
+                    <img src="{{ asset('images/logo.png') }}" alt="Logo" class="h-12">
                 </a>
                 <form action="{{ route('home') }}" method="GET" class="flex-grow">
                     <input type="text" name="search" placeholder="Buscar" value="{{ request('search') }}"
-                    class="border border-gray-200 rounded py-2 px-4 w-1/2"
+                    class="border border-indigo-200 rounded py-2 px-4 w-1/2"
                     >
                 </form>
             </div>
@@ -33,10 +33,10 @@
 
         <div class="opacity-60 h-px mb-8" style="
             background: linear-gradient(to right,
-                rgba(200,200,200,0) 0%,
-                rgba(200,200,200,1) 30%,
-                rgba(200,200,200,1) 70%,
-                rgba(200,200,200,0) 100%,
+                rgba(3, 105, 161,0) 0%,
+                rgba(3, 105, 161,1) 30%,
+                rgba(3, 105, 161,1) 70%,
+                rgba(3, 105, 161,0) 100%,
             )
         "></div>
 
@@ -44,7 +44,7 @@
         @yield('content')
 
         <p class="py-16">
-            <img src="{{ asset('images/dev.png') }}" alt="Logo" class="h-12 mx-auto">
+            <img src="{{ asset('images/logo.png') }}" alt="Logo" class="h-12 mx-auto">
         </p>
     </div>
 
